@@ -1,0 +1,51 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+      "tslint:recommended",
+      "tslint-react-hooks"
+    ],
+    "jsRules": {},
+    "rules": {
+      "ordered-imports": false,
+      "completed-docs": [
+        true,
+        {
+          "enums": true,
+          "functions": {
+            "visibilities": [
+              "exported"
+            ]
+          },
+          "interfaces": {
+            "visibilities": [
+              "exported"
+            ]
+          },
+          "methods": {
+            "tags": {
+              "content": {},
+              "existence": [
+                "inheritdoc",
+                "override"
+              ]
+            }
+          },
+          "types": {
+            "visibilities": [
+              "exported"
+            ]
+          },
+          "variables": {
+            "visibilities": [
+              "exported"
+            ]
+          }
+        }
+      ],
+      "max-classes-per-file": false,
+      "max-line-length": false,
+      "member-ordering": false,
+      "variable-name": false
+    },
+    "rulesDirectory": []
+}
